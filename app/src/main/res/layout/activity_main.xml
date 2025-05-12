@@ -25,7 +25,7 @@
             android:layout_width="81dp"
             android:layout_height="83dp"
             android:layout_gravity="center"
-            android:background="#EBE5C2"
+            android:background="@drawable/custom_button"
             android:hapticFeedbackEnabled="false"
             android:layerType="none"
             android:scaleType="fitCenter"
@@ -59,7 +59,8 @@
             android:gravity="center_horizontal"
             android:text="Crie uma Conta"
             android:textColor="#EBE5C2"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView3"
