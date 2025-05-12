@@ -15,6 +15,42 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="116dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="81dp"
+            android:layout_height="83dp"
+            android:layout_gravity="center"
+            android:background="#EBE5C2"
+            android:hapticFeedbackEnabled="false"
+            android:layerType="none"
+            android:scaleType="fitCenter"
+            android:scrollbarSize="4dp"
+            android:scrollbarStyle="insideOverlay"
+            app:srcCompat="@drawable/qrpreto" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:gravity="center"
+            android:text="AcordaSCAN"
+            android:textColor="#EBE5C2"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="21dp" />
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
@@ -22,6 +58,10 @@
             android:text="Crie uma senha:"
             android:textColor="#EBE5C2"
             android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
 
         <EditText
             android:id="@+id/edtSenha"
@@ -31,6 +71,10 @@
             android:inputType="numberPassword"
             android:textColor="#EBE5C2" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
@@ -38,6 +82,10 @@
             android:text="Repita a senha:"
             android:textColor="#EBE5C2"
             android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
 
         <EditText
             android:id="@+id/edtSenhaR"
@@ -47,9 +95,13 @@
             android:inputType="numberPassword"
             android:textColor="#EBE5C2" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
         <Button
             android:id="@+id/btnConfirmar"
-            android:layout_width="match_parent"
+            android:layout_width="273dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="#EBE5C2"
@@ -58,5 +110,6 @@
             android:text="Confirmar"
             android:textColor="#1B1A55"
             android:textSize="20sp" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
