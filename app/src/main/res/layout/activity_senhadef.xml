@@ -49,12 +49,34 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="21dp" />
+            android:layout_height="19dp" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:text="Insira um Email:"
+            android:textColor="#EBE5C2"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtSenha2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:textColor="#EBE5C2" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="21dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
             android:text="Crie uma senha:"
             android:textColor="#EBE5C2"
             android:textSize="16sp" />
@@ -79,6 +101,7 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
             android:text="Repita a senha:"
             android:textColor="#EBE5C2"
             android:textSize="16sp" />

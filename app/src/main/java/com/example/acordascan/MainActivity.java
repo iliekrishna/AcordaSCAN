@@ -38,4 +38,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void Login (View view){
+
+        Intent intent = new Intent(MainActivity.this, QrCode.class);
+        startActivity(intent);
+
+    }
+
+
 }
