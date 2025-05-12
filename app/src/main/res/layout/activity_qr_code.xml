@@ -11,19 +11,19 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="#1B1A55"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        android:orientation="vertical">
 
         <Button
-            android:id="@+id/btnQRCODE"
+            android:id="@+id/btnScan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="#EBE5C2"
             android:fontFamily="@font/archivo_black"
+            android:onClick="Scannear"
             android:text="Scannear "
             android:textColor="#1B1A55"
             android:textSize="20sp" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

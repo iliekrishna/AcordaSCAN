@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     Button btnContinuar;
-    EditText edtEmail;
+    EditText edtEmail = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +30,10 @@ public class MainActivity extends AppCompatActivity {
 
         btnContinuar = findViewById(R.id.btnContinuar);
         edtEmail = findViewById(R.id.edtEmail);
-
     }
+
     public void proximo (View view){
+
         Intent intent = new Intent(MainActivity.this, senhadef.class);
         startActivity(intent);
 
