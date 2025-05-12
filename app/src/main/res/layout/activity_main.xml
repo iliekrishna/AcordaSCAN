@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/Tela1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1B1A55"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="116dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="81dp"
+            android:layout_height="83dp"
+            android:layout_gravity="center"
+            android:background="#EBE5C2"
+            android:hapticFeedbackEnabled="false"
+            android:layerType="none"
+            android:scaleType="fitCenter"
+            android:scrollbarSize="4dp"
+            android:scrollbarStyle="insideOverlay"
+            app:srcCompat="@drawable/qrpreto" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="13dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:gravity="center"
+            android:text="AcordaSCAN"
+            android:textColor="#EBE5C2"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="21dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:text="Crie uma Conta"
+            android:textColor="#EBE5C2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_medium"
+            android:gravity="center_horizontal"
+            android:text="Entre com um email para continuar"
+            android:textColor="#EBE5C2" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="31dp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#F4F4F4"
+            android:ems="10"
+            android:fontFamily="@font/archivo_medium"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#EBE5C2"
+            android:textColorHint="#EBE5C2" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <Button
+            android:id="@+id/btnContinuar"
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#EBE5C2"
+            android:fontFamily="@font/archivo_black"
+            android:onClick="proximo"
+            android:text="Continuar"
+            android:textColor="#1B1A55"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
