@@ -15,63 +15,46 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="90dp" />
+            android:layout_height="179dp" />
 
         <ImageView
-            android:id="@+id/imgQrCode"
+            android:id="@+id/imageView5"
             android:layout_width="match_parent"
             android:layout_height="248dp"
-            app:srcCompat="@drawable/qrpreto" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="19dp" />
+            android:src="@drawable/mm_qrcode" />
 
         <EditText
-            android:id="@+id/edtNome"
-            android:layout_width="340dp"
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="#FFFFFF"
             android:ems="10"
-            android:fontFamily="@font/archivo_medium"
             android:hint="Nome do Evento"
             android:inputType="text"
             android:textColor="#EBE5C2"
             android:textColorHint="#EBE5C2" />
 
         <EditText
-            android:id="@+id/edtData"
-            android:layout_width="340dp"
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="#FFFFFF"
             android:ems="10"
-            android:fontFamily="@font/archivo_medium"
             android:hint="Data do Evento"
             android:inputType="date"
             android:textColor="#EBE5C2"
             android:textColorHint="#EBE5C2" />
 
         <EditText
-            android:id="@+id/edtHora"
-            android:layout_width="340dp"
+            android:id="@+id/editTextTime"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="#FFFFFF"
             android:ems="10"
-            android:fontFamily="@font/archivo_medium"
             android:hint="Horário do Evento"
             android:inputType="time"
             android:textColor="#EBE5C2"
             android:textColorHint="#EBE5C2" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="19dp" />
-
         <Button
-            android:id="@+id/btnCriar"
+            android:id="@+id/btnGerar2"
             android:layout_width="246dp"
             android:layout_height="58dp"
             android:layout_gravity="center"

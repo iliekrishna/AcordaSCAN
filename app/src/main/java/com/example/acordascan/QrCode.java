@@ -38,10 +38,6 @@ public class QrCode extends AppCompatActivity {
 
     }
 
-    public void Perfil(View view){
-        Intent intent = new Intent(QrCode.this, perfil.class);
-        startActivity(intent);
-    }
     public void Criar(View view){
         Intent intent = new Intent(QrCode.this, Gerador.class);
         startActivity(intent);
