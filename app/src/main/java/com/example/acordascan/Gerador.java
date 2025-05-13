@@ -1,5 +1,6 @@
 package com.example.acordascan;
 
+import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,6 +29,7 @@ public class Gerador extends AppCompatActivity {
 
     private ImageView imgQrcode;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
