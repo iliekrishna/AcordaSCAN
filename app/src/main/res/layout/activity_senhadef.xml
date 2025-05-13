@@ -53,18 +53,24 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="match_parent"
+            android:layout_width="206dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:fontFamily="@font/archivo_black"
+            android:gravity="center"
             android:text="Insira um Email:"
             android:textColor="#EBE5C2"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/edtSenha2"
-            android:layout_width="match_parent"
+            android:layout_width="341dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
             android:ems="10"
+            android:fontFamily="@font/archivo_medium"
             android:inputType="numberPassword"
             android:textColor="#EBE5C2" />
 
@@ -74,9 +80,11 @@
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="match_parent"
+            android:layout_width="214dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:fontFamily="@font/archivo_black"
+            android:gravity="center"
             android:text="Crie uma senha:"
             android:textColor="#EBE5C2"
             android:textSize="16sp" />
@@ -87,9 +95,13 @@
 
         <EditText
             android:id="@+id/edtSenha"
-            android:layout_width="match_parent"
+            android:layout_width="344dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
             android:ems="10"
+            android:fontFamily="@font/archivo_medium"
             android:inputType="numberPassword"
             android:textColor="#EBE5C2" />
 
@@ -99,9 +111,11 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="match_parent"
+            android:layout_width="254dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:fontFamily="@font/archivo_black"
+            android:gravity="center"
             android:text="Repita a senha:"
             android:textColor="#EBE5C2"
             android:textSize="16sp" />
@@ -112,9 +126,13 @@
 
         <EditText
             android:id="@+id/edtSenhaR"
-            android:layout_width="match_parent"
+            android:layout_width="349dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
             android:ems="10"
+            android:fontFamily="@font/archivo_medium"
             android:inputType="numberPassword"
             android:textColor="#EBE5C2" />
 

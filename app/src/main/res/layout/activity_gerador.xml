@@ -7,4 +7,79 @@
     android:layout_height="match_parent"
     tools:context=".Gerador">
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#1B1A55"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+        <ImageView
+            android:id="@+id/imgQrCode"
+            android:layout_width="match_parent"
+            android:layout_height="248dp"
+            app:srcCompat="@drawable/qrpreto" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:fontFamily="@font/archivo_medium"
+            android:hint="Nome do Evento"
+            android:inputType="text"
+            android:textColor="#EBE5C2"
+            android:textColorHint="#EBE5C2" />
+
+        <EditText
+            android:id="@+id/edtData"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:fontFamily="@font/archivo_medium"
+            android:hint="Data do Evento"
+            android:inputType="date"
+            android:textColor="#EBE5C2"
+            android:textColorHint="#EBE5C2" />
+
+        <EditText
+            android:id="@+id/edtHora"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:fontFamily="@font/archivo_medium"
+            android:hint="Horário do Evento"
+            android:inputType="time"
+            android:textColor="#EBE5C2"
+            android:textColorHint="#EBE5C2" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
+        <Button
+            android:id="@+id/btnCriar"
+            android:layout_width="246dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#EBE5C2"
+            android:fontFamily="@font/archivo_black"
+            android:text="Gerar QRCode"
+            android:textColor="#1B1A55"
+            android:textSize="20sp" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
