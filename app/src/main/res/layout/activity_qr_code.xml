@@ -39,8 +39,8 @@
             android:layout_gravity="center"
             android:backgroundTint="#EBE5C2"
             android:fontFamily="@font/archivo_black"
-            android:onClick="Scannear"
-            android:text="Gerar QRCode"
+            android:onClick="Criar"
+            android:text="Criar Evento"
             android:textColor="#1B1A55"
             android:textSize="20sp" />
 

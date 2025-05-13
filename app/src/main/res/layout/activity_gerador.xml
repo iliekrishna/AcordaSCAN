@@ -7,4 +7,62 @@
     android:layout_height="match_parent"
     tools:context=".Gerador">
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#1B1A55"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="179dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="248dp"
+            android:src="@drawable/mm_qrcode" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nome do Evento"
+            android:inputType="text"
+            android:textColor="#EBE5C2"
+            android:textColorHint="#EBE5C2" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Data do Evento"
+            android:inputType="date"
+            android:textColor="#EBE5C2"
+            android:textColorHint="#EBE5C2" />
+
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Horário do Evento"
+            android:inputType="time"
+            android:textColor="#EBE5C2"
+            android:textColorHint="#EBE5C2" />
+
+        <Button
+            android:id="@+id/btnGerar2"
+            android:layout_width="246dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#EBE5C2"
+            android:fontFamily="@font/archivo_black"
+            android:text="Gerar QRCode"
+            android:textColor="#1B1A55"
+            android:textSize="20sp" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
