@@ -49,9 +49,11 @@
             android:ems="10"
             android:fontFamily="@font/archivo_medium"
             android:hint="Data do Evento"
-            android:inputType="date"
+            android:inputType="none"
             android:textColor="#EBE5C2"
-            android:textColorHint="#EBE5C2" />
+            android:textColorHint="#EBE5C2"
+            android:clickable="true"
+            android:focusable="false"/>
 
         <EditText
             android:id="@+id/edtHora"
@@ -62,9 +64,11 @@
             android:ems="10"
             android:fontFamily="@font/archivo_medium"
             android:hint="Horário do Evento"
-            android:inputType="time"
+            android:inputType="none"
             android:textColor="#EBE5C2"
-            android:textColorHint="#EBE5C2" />
+            android:textColorHint="#EBE5C2"
+            android:clickable="true"
+            android:focusable="false" />
 
         <Space
             android:layout_width="match_parent"

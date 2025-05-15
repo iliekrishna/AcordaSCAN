@@ -1,11 +1,9 @@
 package com.example.acordascan;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,31 +11,32 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class perfil extends AppCompatActivity {
+import com.example.acordascan.util.DBHelper;
 
-    TextView txtMeusEventos;
-    Button btnEventos;
+import java.util.List;
+
+public class ListaEventos extends AppCompatActivity {
+
+    private ListView lsvDados;
+    private ArrayAdapter<String> adapter;
+    private DBHelper DBHelper;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_perfil);
+        setContentView(R.layout.activity_lista_eventos);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        btnEventos = findViewById(R.id.btnEventos);
+        DBHelper = new DBHelper(this);
 
-        btnEventos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(perfil.this, ListaEventos.class);
-                startActivity(intent);
-            }
-        });
+        lsvDados = findViewById(R.id.lsvDados);
+
+
     }
 }

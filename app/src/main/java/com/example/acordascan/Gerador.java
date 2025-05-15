@@ -1,13 +1,17 @@
 package com.example.acordascan;
 
 import android.annotation.SuppressLint;
+import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -21,6 +25,8 @@ import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
+
+import java.util.Calendar;
 
 public class Gerador extends AppCompatActivity {
 
@@ -53,12 +59,57 @@ public class Gerador extends AppCompatActivity {
                 generateQRCode();
             }
         });
+
+        edtData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Calendar calendario = Calendar.getInstance();
+                int ano = calendario.get(Calendar.YEAR);
+                int mes = calendario.get(Calendar.MONTH);
+                int dia = calendario.get(Calendar.DAY_OF_MONTH);
+
+                DatePickerDialog datePicker = new DatePickerDialog(
+                        Gerador.this,
+                        new DatePickerDialog.OnDateSetListener() {
+                            @Override
+                            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                                String dataFormatada = String.format("%02d/%02d/%04d", dayOfMonth, month + 1, year);
+                                edtData.setText(dataFormatada);
+                            }
+                        },
+                        ano, mes, dia
+                );
+                datePicker.show();
+            }
+        });
+
+        edtHora.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final Calendar calendario = Calendar.getInstance();
+                int hora = calendario.get(Calendar.HOUR_OF_DAY);
+                int minuto = calendario.get(Calendar.MINUTE);
+
+                TimePickerDialog timePicker = new TimePickerDialog(
+                        Gerador.this,
+                        new TimePickerDialog.OnTimeSetListener() {
+                            @Override
+                            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                                String horaFormatada = String.format("%02d:%02d", hourOfDay, minute);
+                                edtHora.setText(horaFormatada);
+                            }
+                        },
+                        hora, minuto, true // o último "true" define o formato 24h
+                );
+                timePicker.show();
+            }
+        });
     }
 
     private void generateQRCode() {
         String eventName = edtNome.getText().toString().trim();
         String eventDate = edtData.getText().toString().trim();
-        String eventTime = edtHora.toString().trim();
+        String eventTime = edtHora.getText().toString();
 
         if (eventName.isEmpty() || eventDate.isEmpty() || eventTime.isEmpty()) {
             Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();

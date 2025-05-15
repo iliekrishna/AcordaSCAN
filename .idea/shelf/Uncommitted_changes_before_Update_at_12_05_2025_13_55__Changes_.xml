@@ -2,6 +2,7 @@
   <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_05_2025_13_55_[Changes]/shelved.patch" />
   <option name="DESCRIPTION" value="Uncommitted changes before Update at 12/05/2025 13:55 [Changes]" />
   <binary>
+    <option name="BEFORE_PATH" />
     <option name="AFTER_PATH" value="app/src/main/res/drawable/imagem_do_usuario_com_fundo_preto.png" />
     <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_05_2025_13_55_[Changes]/imagem_do_usuario_com_fundo_preto.png" />
   </binary>

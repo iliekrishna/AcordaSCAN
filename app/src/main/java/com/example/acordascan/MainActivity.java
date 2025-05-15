@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        btnContinuar = findViewById(R.id.btnContinuar);
+        btnContinuar = findViewById(R.id.btnEventos);
         edtEmail = findViewById(R.id.edtEmail);
     }
 
