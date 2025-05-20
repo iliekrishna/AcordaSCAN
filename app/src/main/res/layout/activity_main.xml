@@ -18,7 +18,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="116dp" />
+            android:layout_height="147dp" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -53,17 +53,6 @@
             android:layout_height="21dp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:gravity="center_horizontal"
-            android:onClick="proximo"
-            android:text="Crie uma Conta"
-            android:textColor="#EBE5C2"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,7 +70,7 @@
             android:layout_width="273dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:backgroundTint="#F4F4F4"
+            android:backgroundTint="#EBE5C2"
             android:ems="10"
             android:fontFamily="@font/archivo_medium"
             android:hint="Email"
@@ -90,20 +79,20 @@
             android:textColorHint="#EBE5C2" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/edtSenhaLogin"
             android:layout_width="273dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="#F4F4F4"
+            android:backgroundTint="#EBE5C2"
             android:ems="10"
-            android:fontFamily="@font/archivo_medium"
             android:hint="Senha"
-            android:inputType="textPassword"
+            android:inputType="numberPassword"
+            android:textColor="#EBE5C2"
             android:textColorHint="#EBE5C2" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="15dp" />
+            android:layout_height="22dp" />
 
         <Button
             android:id="@+id/btnContinuar"
@@ -116,6 +105,21 @@
             android:text="Entrar"
             android:textColor="#1B1A55"
             android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:onClick="cadastrar"
+            android:text="@string/criar_conta"
+            android:textColor="#EBE5C2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

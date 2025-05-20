@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AcordaScan</string>
+    <string name="criar_conta"><u>Ainda não tem uma conta?</u></string>
+
 </resources>

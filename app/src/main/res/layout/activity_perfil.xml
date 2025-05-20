@@ -22,6 +22,15 @@
             android:src="@drawable/imagem_do_usuario_com_fundo_preto" />
 
         <TextView
+            android:id="@+id/txtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_medium"
+            android:gravity="center"
+            android:textColor="#EBE5C2"
+            android:textSize="16sp" />
+
+        <TextView
             android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,6 +51,18 @@
             android:textColor="#EBE5C2"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#EBE5C2"
+            android:fontFamily="@font/archivo_black"
+            android:gravity="center"
+            android:text="Desconectar-se "
+            android:textColor="#1B1A55"
+            android:textSize="20sp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

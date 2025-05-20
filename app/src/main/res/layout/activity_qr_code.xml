@@ -15,10 +15,10 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="49dp"
-            android:layout_height="52dp"
+            android:layout_width="84dp"
+            android:layout_height="88dp"
             android:background="@drawable/custom_button"
-            android:onClick="Perfil"
+            android:onClick="perfil"
             android:src="@drawable/imagem_do_usuario_com_fundo_preto" />
 
         <Button

@@ -22,7 +22,6 @@ public class QrCode extends AppCompatActivity {
 
     Button btnScan;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +37,11 @@ public class QrCode extends AppCompatActivity {
 
     }
 
+ public void perfil(View view){
+        Intent intent = new Intent(QrCode.this, perfil.class);
+        startActivity(intent);
+        finish();
+ }
     public void Criar(View view){
         Intent intent = new Intent(QrCode.this, Gerador.class);
         startActivity(intent);
