@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Login realizado com sucesso!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(MainActivity.this, QrCode.class);
             startActivity(intent);
+            finish();
             // Redirecionar para outra tela
         } else {
             Toast.makeText(this, "Email ou senha inválidos", Toast.LENGTH_SHORT).show();
