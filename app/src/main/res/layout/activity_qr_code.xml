@@ -16,10 +16,14 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="84dp"
-            android:layout_height="88dp"
+            android:layout_height="81dp"
             android:background="@drawable/custom_button"
             android:onClick="perfil"
             android:src="@drawable/imagem_do_usuario_com_fundo_preto" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
 
         <Button
             android:id="@+id/btnScan"

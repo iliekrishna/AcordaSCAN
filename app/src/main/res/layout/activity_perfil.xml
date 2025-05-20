@@ -13,6 +13,10 @@
         android:background="#1B1A55"
         android:orientation="vertical">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="147dp" />
+
         <ImageView
             android:id="@+id/imgPerfil"
             android:layout_width="152dp"
@@ -21,6 +25,10 @@
             android:background="@drawable/custom_button"
             android:src="@drawable/imagem_do_usuario_com_fundo_preto" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="29dp" />
+
         <TextView
             android:id="@+id/txtUsuario"
             android:layout_width="match_parent"
@@ -28,22 +36,30 @@
             android:fontFamily="@font/archivo_medium"
             android:gravity="center"
             android:textColor="#EBE5C2"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/textView9"
+        <Space
             android:layout_width="match_parent"
+            android:layout_height="29dp" />
+
+        <Button
+            android:id="@+id/btnIngressos"
+            android:layout_width="229dp"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:gravity="center_horizontal"
-            android:text="Meus ingressos"
-            android:textColor="#EBE5C2"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:layout_gravity="center"
+            android:backgroundTint="#EBE5C2"
+            android:fontFamily="@font/archivo_black"
+            android:text="Meus Ingressos"
+            android:textColor="#1B1A55"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="29dp" />
 
         <Button
             android:id="@+id/btnEntrar"
-            android:layout_width="match_parent"
+            android:layout_width="229dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="#EBE5C2"
@@ -51,6 +67,10 @@
             android:text="Meus Eventos"
             android:textColor="#1B1A55"
             android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="29dp" />
 
         <Button
             android:id="@+id/btnSair"
