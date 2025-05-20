@@ -1,5 +1,6 @@
 package com.example.acordascan;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -16,11 +17,12 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnContinuar;
+    Button btnEntrar;
     EditText edtEmail, edtSenhaLogin;
 
     DBHelper db;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         db = new DBHelper(this);
-        btnContinuar = findViewById(R.id.btnContinuar);
+        btnEntrar = findViewById(R.id.btnEntrar);
         edtEmail = findViewById(R.id.edtEmail);
         edtSenhaLogin = findViewById(R.id.edtSenhaLogin);
     }
