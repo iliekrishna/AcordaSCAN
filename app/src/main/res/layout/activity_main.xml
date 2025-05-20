@@ -95,7 +95,7 @@
             android:layout_height="22dp" />
 
         <Button
-            android:id="@+id/btnContinuar"
+            android:id="@+id/btnEventos"
             android:layout_width="273dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
