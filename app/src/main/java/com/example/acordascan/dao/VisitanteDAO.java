@@ -33,15 +33,16 @@ public class VisitanteDAO {
     }
 
 
-    public List<Visitante> obterTodos() {
+    /*public List<Visitante> obterTodos() {
         List<Visitante> visitantes = new ArrayList<>();
-        Cursor cursor = banco.query("visitante", new String[] {"id", "nome", "dataEvento", "horarioEvento", "nomeEvento"},
+        Cursor cursor = banco.query("visitante", new String[]{"id", "nome", "dataEvento", "horarioEvento", "nomeEvento"},
                 //era um args
                 "nome=?", null, null, null, null);
 
         while (cursor.moveToNext()) {
             Visitante a = new Visitante();
-            a.setId();
+            //a.setId();
         }
-    }
+     }*/
+
 }
