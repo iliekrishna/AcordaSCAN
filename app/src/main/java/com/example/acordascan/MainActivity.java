@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnEntrar;
     EditText edtEmail, edtSenhaLogin;
 
-    DBHelper db;
+    ConnectionFactory db;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        db = new DBHelper(this);
+        db = new ConnectionFactory(this);
         btnEntrar = findViewById(R.id.btnEntrar);
         edtEmail = findViewById(R.id.edtEmail);
         edtSenhaLogin = findViewById(R.id.edtSenhaLogin);

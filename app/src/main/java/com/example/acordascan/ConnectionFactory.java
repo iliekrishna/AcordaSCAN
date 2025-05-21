@@ -6,11 +6,17 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class DBHelper extends SQLiteOpenHelper {
+import androidx.annotation.Nullable;
+
+public class ConnectionFactory extends SQLiteOpenHelper {
+
+    public ConnectionFactory(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
+        super(context, name, factory, version);
+    }
 
     public static final String DBNAME = "usuarios.db";
 
-    public DBHelper(Context context) {
+    public ConnectionFactory(Context context) {
         super(context, DBNAME, null, 1);
 
     }

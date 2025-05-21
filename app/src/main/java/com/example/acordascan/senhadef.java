@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class senhadef extends AppCompatActivity {
 
-    DBHelper db;
+    ConnectionFactory db;
     Button btnConfirmar;
     EditText edtEmailCadastro, edtSenhaCadastro;
 
@@ -30,7 +30,7 @@ public class senhadef extends AppCompatActivity {
             return insets;
         });
 
-        db = new DBHelper(this);
+        db = new ConnectionFactory(this);
         edtSenhaCadastro =findViewById(R.id.edtSenhaCadastro);
         edtEmailCadastro = findViewById(R.id.edtEmailCadastro);
         btnConfirmar = findViewById(R.id.btnConfirmar);
