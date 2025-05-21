@@ -70,10 +70,6 @@
             android:clickable="true"
             android:focusable="false" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="19dp" />
-
         <Button
             android:id="@+id/btnCriar"
             android:layout_width="246dp"
@@ -84,6 +80,10 @@
             android:text="Gerar QRCode"
             android:textColor="#1B1A55"
             android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

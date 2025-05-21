@@ -1,4 +1,4 @@
-package com.example.acordascan;
+package com.example.acordascan.util;
 
 import android.content.ContentValues;
 import android.content.Context;
