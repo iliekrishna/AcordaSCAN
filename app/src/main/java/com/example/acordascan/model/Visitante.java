@@ -1,60 +1,26 @@
 package com.example.acordascan.model;
 
 public class Visitante {
-
-    private Long id;
+    private long id;
     private String nome;
     private String dataEvento;
     private String horarioEvento;
     private String nomeEvento;
 
-    public Visitante() {
-    }
+    // Getters e Setters
+    public long getId() { return id; }
+    public void setId(long id) { this.id = id; }
 
-    public Visitante(String nome, String dataEvento, String horarioEvento, String nomeEvento) {
-        this.nome = nome;
-        this.dataEvento = dataEvento;
-        this.horarioEvento = horarioEvento;
-        this.nomeEvento = nomeEvento;
-    }
+    public String getNome() { return nome; }
+    public void setNome(String nome) { this.nome = nome; }
 
-    public String getNome() {
-        return nome;
-    }
+    public String getDataEvento() { return dataEvento; }
+    public void setDataEvento(String dataEvento) { this.dataEvento = dataEvento; }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+    public String getHorarioEvento() { return horarioEvento; }
+    public void setHorarioEvento(String horarioEvento) { this.horarioEvento = horarioEvento; }
 
-    public String getDataEvento() {
-        return dataEvento;
-    }
-
-    public void setDataEvento(String dataEvento) {
-        this.dataEvento = dataEvento;
-    }
-
-    public String getHorarioEvento() {
-        return horarioEvento;
-    }
-
-    public void setHorarioEvento(String horarioEvento) {
-        this.horarioEvento = horarioEvento;
-    }
-
-    public String getNomeEvento() {
-        return nomeEvento;
-    }
-
-    public void setNomeEvento(String nomeEvento) {
-        this.nomeEvento = nomeEvento;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public String getNomeEvento() { return nomeEvento; }
+    public void setNomeEvento(String nomeEvento) { this.nomeEvento = nomeEvento; }
 }
+

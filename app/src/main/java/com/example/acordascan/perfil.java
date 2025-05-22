@@ -17,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class perfil extends AppCompatActivity {
 
     TextView txtUsuario;
-    Button btnSair;
+    Button btnIngressos, btnSair;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -31,15 +31,22 @@ public class perfil extends AppCompatActivity {
             return insets;
         });
 
+        btnIngressos = findViewById(R.id.btnIngressos);
         btnSair = findViewById(R.id.btnSair);
         txtUsuario = findViewById(R.id.txtUsuario);
 
         SharedPreferences sharedPref = getSharedPreferences("usuario_logado", MODE_PRIVATE);
-        String emailLogado = sharedPref.getString("email", "Email não encontrado");
+        String usuarioLogado = sharedPref.getString("Usuario", "Usuario não encontrado");
 
-        txtUsuario.setText("Bem-vindo   " + emailLogado);
+        txtUsuario.setText("Bem-vindo   " + usuarioLogado);
 
+        btnIngressos.setOnClickListener(v ->{
 
+            Intent intent = new Intent(perfil.this, ListaEventos.class);
+            startActivity(intent);
+            finish();
+
+        });
 
         btnSair.setOnClickListener(v -> {
 
@@ -51,11 +58,12 @@ public class perfil extends AppCompatActivity {
             Intent intent = new Intent(perfil.this, MainActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK); // limpa pilha
             startActivity(intent);
-            finish();
+            //finish();
         });
 
 
         }
+
     }
 
 

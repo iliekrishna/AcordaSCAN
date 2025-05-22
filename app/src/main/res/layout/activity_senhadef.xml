@@ -52,6 +52,32 @@
             android:layout_height="19dp" />
 
         <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/archivo_black"
+            android:gravity="center"
+            android:text="Insira um Nome:"
+            android:textColor="#EBE5C2"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtNomeUsuario"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#EBE5C2"
+            android:backgroundTintMode="src_over"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#EBE5C2" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
+        <TextView
             android:id="@+id/textView2"
             android:layout_width="206dp"
             android:layout_height="wrap_content"

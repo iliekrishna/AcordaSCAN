@@ -116,11 +116,8 @@ public class Gerador extends AppCompatActivity {
             return;
         }
 
-        String qrContent = null;
+        String qrContent =  eventName + "," + eventDate + "," + eventTime + "";
         try {
-            qrContent = "EVENTO:" + eventName + "\n" +
-                    "DATA:" + eventDate + "\n" +
-                    "HORA:" + eventTime;
 
             MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
             BitMatrix bitMatrix = multiFormatWriter.encode(qrContent, BarcodeFormat.QR_CODE, 500, 500);
