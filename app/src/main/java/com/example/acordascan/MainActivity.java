@@ -51,11 +51,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Login (View view){
+
         String email = edtEmail.getText().toString();
         String senha = edtSenhaLogin.getText().toString();
 
         if (db.verificarLogin(email, senha)) {
-
+            SharedPreferences sharedPref = getSharedPreferences("usuario_logado", MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putString("email", email);  // salva o email
+            editor.apply();
             Toast.makeText(this, "Login realizado com sucesso!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(MainActivity.this, QrCode.class);
             startActivity(intent);

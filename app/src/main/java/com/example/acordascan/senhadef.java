@@ -55,10 +55,10 @@ public class senhadef extends AppCompatActivity {
         } else {
             boolean sucesso = db.inserirUsuario(nomeUs,email,senha);
             if (sucesso) {
-                SharedPreferences sharedPref = getSharedPreferences("usuario_logado", MODE_PRIVATE);
-                SharedPreferences.Editor editor = sharedPref.edit();
-                editor.putString("Usuario", nomeUs);  // salva o email
-                editor.apply();
+//                SharedPreferences sharedPref = getSharedPreferences("usuario_logado", MODE_PRIVATE);
+//                SharedPreferences.Editor editor = sharedPref.edit();
+//                editor.putString("Usuario", nomeUs);  // salva o email
+//                editor.apply();
 
                 Toast.makeText(this, "Cadastro realizado!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(senhadef.this, MainActivity.class );

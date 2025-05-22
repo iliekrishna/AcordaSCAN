@@ -2,8 +2,12 @@ package com.example.acordascan.util;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DBHelper extends SQLiteOpenHelper {
 
@@ -26,11 +30,33 @@ public class DBHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    // Inserção
     public void inserirQRCode(String conteudo) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues valores = new ContentValues();
         valores.put("conteudo", conteudo);
         db.insert("qrdata", null, valores);
         db.close();
+    }
+
+    // Novo: Listar QRCodes
+    public List<String> listarQRCodes() {
+        List<String> lista = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.query("qrdata",
+                new String[]{"id", "conteudo"},
+                null, null, null, null, null);
+
+        if (cursor.moveToFirst()) {
+            do {
+                int id = cursor.getInt(cursor.getColumnIndexOrThrow("id"));
+                String conteudo = cursor.getString(cursor.getColumnIndexOrThrow("conteudo"));
+                lista.add("ID: " + id + " - Conteúdo: " + conteudo);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        db.close();
+        return lista;
     }
 }

@@ -25,7 +25,8 @@ public class ListaEventos extends AppCompatActivity {
 
     private ListView listView;
     private ArrayAdapter<String> adapter;
-    private List<String> eventos;
+    private List<String> qrCodes;
+    private DBHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,20 +34,22 @@ public class ListaEventos extends AppCompatActivity {
         setContentView(R.layout.activity_lista_eventos);
 
         listView = findViewById(R.id.lsvDados);
+        dbHelper = new DBHelper(this);
 
-        // Exemplo com dados mockados - substitua pelos seus dados reais
-        eventos = new ArrayList<>();
-        eventos.add("Evento 1 - 10/10/2023");
-        eventos.add("Evento 2 - 15/10/2023");
-        eventos.add("Evento 3 - 20/10/2023");
+        // Exemplo de inserção de dados
+         dbHelper.inserirQRCode("https://meusite.com");
+         dbHelper.inserirQRCode("https://outrosite.com");
+
+        // Pegando dados do banco
+        qrCodes = dbHelper.listarQRCodes();
 
         adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_list_item_1, eventos);
+                android.R.layout.simple_list_item_1,
+                qrCodes);
         listView.setAdapter(adapter);
 
-        // Clique nos itens
         listView.setOnItemClickListener((parent, view, position, id) -> {
-            String item = eventos.get(position);
+            String item = qrCodes.get(position);
             Toast.makeText(ListaEventos.this, "Selecionado: " + item,
                     Toast.LENGTH_SHORT).show();
         });
